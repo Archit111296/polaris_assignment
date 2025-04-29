@@ -10,23 +10,10 @@ class ChoiceEnum(Enum):
     def get_choices(cls):
         return tuple(x.value for x in cls)
 
-
-class IncidentType(ChoiceEnum):
-    individual = ('I', 'Individual')
-    enterprise = ('E', 'Enterprise')
-    government = ('G', 'Government')
-
-
 class UserType(ChoiceEnum):
     customer = ('C', 'Customer')
     rider = ('R', 'Rider')
     restaurant = ('rt', 'Restaurant')
-
-
-class PriorityType(ChoiceEnum):
-    high = ('H', 'High')
-    medium = ('M', 'Medium')
-    low = ('L', 'Low')
 
 
 class StatusType(ChoiceEnum):
