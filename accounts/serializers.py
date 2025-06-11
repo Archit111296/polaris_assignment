@@ -18,7 +18,7 @@ class CustomPasswordField(serializers.CharField):
 
 
 class CustomEmailField(serializers.EmailField):
-    #To Standardize the email platform, so we won't get Satyam@gmail.com and satyam@gmail.com as two different emails
+
 
     def to_internal_value(self, data):
         data = data.lower()
